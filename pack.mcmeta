@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "description": "High-performance library for formatting UUIDs into hex strings.",
+    "pack_format": 16,
+	  "supported_formats": [16, 999],
+	  "min_format": 16,
+	  "max_format": 999
+  }
+}
