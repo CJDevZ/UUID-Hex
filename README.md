@@ -1,8 +1,10 @@
 # UUID-Hex
-High-performance library for formatting UUIDs into hex strings.
+High-performance library for formatting UUIDs into hexadecimal strings.
 
 ## ✅ Features
-- Function to get the UUID of an entity in hex **efficiently** by **sacrificing Memory**
+- **Efficiently** converts UUIDs to hex format
+- Optimized for speed by relying on a precomputated hexadecimal range (`0000-FFFF`), increasing static data usage
 
 ## 📖 Usage
-Call the `uuid:_` function and use the output in `storage uuid:out plain`
+Call the `uuid:_` function as an entity and use its output in `storage uuid:out plain`
+Alternatively, assign a 4-integer array to `storage uuid:in UUID`, then call the `uuid:convert` function to format it.
